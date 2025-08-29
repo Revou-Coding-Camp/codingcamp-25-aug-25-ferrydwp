@@ -1,0 +1,198 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: #111; /* teks default hitam */
+  background: #ffffff; /* putih dominan */
+}
+
+/* Navbar */
+nav {
+  background: #111111; /* hitam */
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #8b0000; /* merah gelap sebagai aksen */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #87cefa; /* biru muda saat hover */
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #ffffff, #87cefa); /* putih → biru muda */
+  color: #111;
+  font-weight: bold;
+}
+
+/* Profile */
+.profile {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.profile h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8b0000; /* merah aksen */
+}
+
+.profile p, .profile ul {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 1.1em;
+}
+
+.profile ul {
+  padding-left: 20px;
+}
+
+/* HQ */
+.hq {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cities {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cities img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #111111; /* hitam */
+  transition: 0.3s;
+}
+
+.cities img:hover {
+  transform: scale(1.1);
+}
+
+/* Form */
+.form-section {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8b0000; /* merah aksen */
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+form {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea, form button {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+form button {
+  background: #e60026; /* merah cerah Kagura */
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #f4b400; /* emas */
+  color: #111111;
+}
+.output {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  border: 1px solid #111111;
+  padding: 15px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111111;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .cities {
+    flex-direction: column;
+  }
+}

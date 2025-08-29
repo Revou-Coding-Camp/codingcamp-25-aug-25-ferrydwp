@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yorozuya Website</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+ 
+  <nav>
+    <div class="logo">Yorozuya</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#profile">Our Profile</a></li>
+      <li><a href="#portfolio">Mentor</a></li>
+      <li><a href="#message">Message Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Welcome Section -->
+  <header class="welcome" id="home">
+    <h1 id="welcome-text">Hi, Welcome To Yorozuya</h1>
+  </header>
+
+  <!-- Profile -->
+  <section class="profile" id="profile">
+    <h2>Our Profile</h2>
+    <p>
+     Yorozuya Gin-chan is an all-purpose service company operating in Kabukicho, Edo. We’re ready to take on all kinds of jobs, big or small, with one goal in mind: solving your problems—though we often end up creating new ones along the way.
+    </p>
+    <p>
+      Our mission is simple: we do anything you pay us for. From everyday chores to the strangest requests, we won’t turn down a job as long as the payment is right (well… sometimes even when it’s not). We are your one-stop solution for all those unexpected needs.
+    </p>
+    <ul>
+      <li><b>Daily Task:</b> Shopping, cleaning, and companionship.</li>
+      <li><b>Searches:</b> Finding lost items, pets, or people</li>
+      <li><b>Problem Solving</b> Special missions, fighting bad guys, or handling things no one else can</li>
+    </ul>
+    <p>Contact us, and we guarantee your problem will be solved… somehow.</p>
+  </section>
+
+
+  
+
+  <section class="hq" id="portfolio">
+    <h2>Our Mentor</h2>
+    <div class="cities">
+      <div>
+        <img src="images/download(2).jpg" alt="Mentor2">
+        <p>Shinpachi</p>
+      </div>
+      <div>
+        <img src="images/download(3).jpg" alt="Mentor1">
+        <p>Kagura</p>
+      </div>
+      <div>
+        <img src="images/download.jpg" alt="Mentor">
+        <p>Ginchan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section class="form-section" id="message">
+    <h2>Message Us</h2>
+    <div class="form-container">
+      <form id="message-form">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" id="birthdate" required>
+
+        <label>Gender:</label>
+        <div class="gender">
+          <label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
+          <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+        </div>
+
+        <label>Message:</label>
+        <textarea id="user-message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="output" id="output-box"></div>
+  
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created by Anonymous</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
